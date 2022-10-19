@@ -14,7 +14,7 @@ const Hero = () => {
 				data-aos-duration='1000'
 				data-aos-delay='1000'
 			>
-				Hi, I'm Bjørn-Magnus Svendsen Fromreide. Welcome to my portfolio.
+				Hi, Im Bjørn-Magnus Svendsen Fromreide. Welcome to my portfolio.
 			</h1>
 			<p
 				className='w-2/3'
@@ -22,7 +22,7 @@ const Hero = () => {
 				data-aos-duration='1000'
 				data-aos-delay='1600'
 			>
-				I'm a frontend developer from Oslo. I like to make websites and
+				Im a frontend developer from Oslo. I like to make websites and
 				applications for clients and for fun.
 			</p>
 
