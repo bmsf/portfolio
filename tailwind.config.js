@@ -14,6 +14,8 @@ module.exports = {
 				buttonHover: '#4F5359',
 				darkModeBg: '#383B40',
 				darkButtonHover: '#868C73',
+				darkModeBgLighter: '#6C788C',
+				darkModeIcon: '#373C40',
 			},
 			fontFamily: {
 				sans: ['Roboto'],

@@ -1,24 +1,29 @@
 import React from 'react';
+import { MdAlternateEmail } from 'react-icons/md';
 
 const Contact = () => {
 	return (
-		<section
-			id='contact'
-			className='flex flex-col items-center justify-between'
-		>
-			<h2>Contact</h2>
-			{/* <div className='line'></div>
-			<div className='grid grid-cols-2 mt-16 w-2/3'>
-				<div>
-					<p>
-						Feel free to reach out if you have any questions, think we could
-						work together, or just want to connect ✌️
-					</p>
-					<a href='mailto:fromreide94@gmail.com' className='circle spin'>
+		<section class='bg-primary dark:bg-darkModeBg' id='contact'>
+			<div class='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
+				<h2 class='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'>
+					Get in touch
+				</h2>
+				<p class='mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl'>
+					Send me an email if you want to connect
+				</p>
+				<p className='mb-8 lg:mb-16 font-light text-center   sm:text-xl'>
+					Email:{' '}
+					<a href='mailto:fromreide94@gmail.com' className='underline'>
 						fromreide94@gmail.com
 					</a>
-				</div>
-			</div> */}
+				</p>
+				{/* <div className='bg-white h-20 w-20 flex justify-center items-center dark:bg-darkModeBgLighter rounded mx-auto'>
+					<MdAlternateEmail
+						className=' dark:hover:text-darkButtonHover decoration-darkModeIcon cursor-pointer transform transition duration-500 hover:scale-125'
+						size='2rem'
+					/>
+				</div> */}
+			</div>
 		</section>
 	);
 };

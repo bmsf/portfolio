@@ -18,9 +18,9 @@ const Home = () => {
 	return (
 		<div className={darkMode ? 'dark' : ''}>
 			<main className='flex flex-col items-center bg-primary text-secondary dark:bg-darkModeBg dark:text-primary overflow-x-hidden'>
-				<section className='flex flex-col h-screen items-center justify-between'>
+				<section className='flex flex-col h-screen items-center justify-between gap-5'>
 					<Header setDarkMode={setDarkMode} darkMode={darkMode} />
-					<div className='mb-24 w-2/3 '>
+					<div className='mb-24 w-2/3'>
 						<Hero />
 						<BackgroundAnimation />
 					</div>
@@ -34,7 +34,7 @@ const Home = () => {
 				<Projects />
 				<Technologies />
 				<Contact />
-				{/* <Footer /> */}
+				<Footer />
 			</main>
 		</div>
 	);
