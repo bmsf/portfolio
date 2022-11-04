@@ -43,7 +43,7 @@ const Hero = () => {
 					<div
 						data-aos='fade-down'
 						data-aos-duration='1000'
-						className='overflow-y-auto backdrop-blur-sm overflow-x-hidden fixed -top-20 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full mx-auto'
+						className='overflow-y-auto backdrop-blur-sm overflow-x-hidden fixed top-20 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full mx-auto'
 					>
 						<div className='relative p-4 w-full max-w-3xl h-full md:h-auto mx-auto'>
 							<div className='relative bg-darkModeBg rounded-lg shadow dark:bg-primary'>
