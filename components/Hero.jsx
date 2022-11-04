@@ -43,7 +43,7 @@ const Hero = () => {
 					<div
 						data-aos='fade-down'
 						data-aos-duration='1000'
-						className='overflow-y-auto backdrop-blur-sm overflow-x-hidden fixed top-20 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full mx-auto'
+						className='overflow-y-auto backdrop-blur-sm overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full mx-auto'
 					>
 						<div className='relative p-4 w-full max-w-3xl h-full md:h-auto mx-auto'>
 							<div className='relative bg-darkModeBg rounded-lg shadow dark:bg-primary'>
@@ -130,22 +130,18 @@ const Hero = () => {
 									</div>
 								</div>
 
-								{/* <div className='flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600'>
+								<div className='flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600 self-end'>
 									<button
-										data-modal-toggle='defaultModal'
-										type='button'
-										className='text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+										onClick={() => setShowModal(false)}
+										class='bg-button text-primary w-48 transition-all relative inline-flex items-center justify-center  overflow-hidden tracking-tighter dark:text-primary dark:bg-darkModeBg py-4 px-6 rounded-full text-center cursor-pointer group transform'
 									>
-										I accept
+										<span class='absolute w-0 h-0 transition-all duration-500 ease-out dark:bg-darkButtonHover bg-darkButtonHover  rounded-full group-hover:w-56 group-hover:h-56'></span>
+										<span class='absolute  inset-0 w-full h-full mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent '></span>
+										<span class='relative w-full  transition-colors duration-200 ease-in-out group-hover:text-white'>
+											Close
+										</span>
 									</button>
-									<button
-										data-modal-toggle='defaultModal'
-										type='button'
-										className='text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600'
-									>
-										Decline
-									</button>
-								</div> */}
+								</div>
 							</div>
 						</div>
 					</div>
