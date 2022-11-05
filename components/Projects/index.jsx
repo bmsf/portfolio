@@ -25,38 +25,40 @@ const Projects = () => {
 					return (
 						<a
 							key={project.id}
-							className='flex flex-col text-primary w-10/12 mb-10 items-center cursor-pointer h-'
-							style={{ backgroundColor: project.color }}
+							className='flex flex-col text-primary w-10/12 mb-10 items-center cursor-pointer lg:flex-row'
+							style={{ backgroundColor: project.color, color: project.font }}
 							onClick={() => window.open(`${project.link}`, '_blank')}
 						>
-							{/* <Image
-								alt={`Image of project`}
-								src={project.img}
-								className='w-6/6'
-							/> */}
+							<div>
+								<div class='p-10'>
+									<div className='flex flex-col align-center justify-center'>
+										<h3 className='text-3xl font-bold text-center lg:text-left'>
+											{project.name}
+										</h3>
+										<p className='my-10 leading-loose'>{project.info}</p>
+									</div>
 
-							<div class='p-10'>
-								<div className='flex flex-col align-center justify-center'>
-									<h3 className='text-3xl font-bold text-center md:text-left'>
-										{project.name}
-									</h3>
-									<p className='my-10 leading-loose lg:w-2/3'>{project.info}</p>
-								</div>
-
-								<div className='flex flex-wrap uppercase'>
-									{project.technologies.map((tech) => {
-										return (
-											<div
-												key={project.tech}
-												className='tech p-3 my-2 mr-3 bg-hsla(0,0%,100%,.14)'
-												id='bg-tech'
-											>
-												{tech}
-											</div>
-										);
-									})}
+									<div className='flex flex-wrap uppercase'>
+										{project.technologies.map((tech) => {
+											return (
+												<div
+													key={project.tech}
+													className='tech p-3 my-2 mr-3'
+													// id='bg-tech'
+													style={{ backgroundColor: project.bgTech }}
+												>
+													{tech}
+												</div>
+											);
+										})}
+									</div>
 								</div>
 							</div>
+							<Image
+								alt={`Image of project`}
+								src={project.img}
+								className='w-6/6 sm:w-4/6 lg:w-3/6'
+							/>
 						</a>
 					);
 				})}
