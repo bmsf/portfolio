@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
 	content: [
 		'./pages/**/*.{js,ts,jsx,tsx}',
@@ -18,7 +19,7 @@ module.exports = {
 				darkModeIcon: '#373C40',
 			},
 			fontFamily: {
-				body: ['"Open Sans"', 'sans-serif'],
+				body: ['Open Sans', 'sans-serif'],
 			},
 		},
 	},
