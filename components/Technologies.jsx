@@ -5,12 +5,15 @@ import { SiJavascript, SiAdobexd, SiTailwindcss } from 'react-icons/si';
 
 const Technologies = () => {
 	return (
-		<section className='flex flex-col h-screen items-center' id='technologies'>
+		<section
+			className='flex flex-col items-center w-10/12 mb-24'
+			id='technologies'
+		>
 			<h2 class='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'>
 				Technologies
 			</h2>
 			<div className='line'></div>
-			<div className='grid grid-cols-4 gap-48 mt-16'>
+			<div className='grid grid-cols-3 gap-12 mt-16 md:grid-cols-4 sm:gap-40'>
 				<div className='flex flex-col items-center'>
 					<AiFillHtml5
 						size='5rem'

@@ -22,23 +22,22 @@ const Projects = () => {
 
 			<div className='flex flex-col items-center'>
 				{projectList.map((project) => {
-					console.log(project.img);
 					return (
 						<a
 							key={project.id}
-							className='flex flex-col text-primary w-10/12 mb-10 items-center cursor-pointer lg:w-6/12 '
+							className='flex flex-col text-primary w-10/12 mb-10 items-center cursor-pointer h-'
 							style={{ backgroundColor: project.color }}
 							onClick={() => window.open(`${project.link}`, '_blank')}
 						>
-							<Image
+							{/* <Image
 								alt={`Image of project`}
 								src={project.img}
 								className='w-6/6'
-							/>
+							/> */}
 
 							<div class='p-10'>
 								<div className='flex flex-col align-center justify-center'>
-									<h3 className='text-3xl font-bold text-center'>
+									<h3 className='text-3xl font-bold text-center md:text-left'>
 										{project.name}
 									</h3>
 									<p className='my-10 leading-loose lg:w-2/3'>{project.info}</p>

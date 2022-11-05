@@ -18,7 +18,7 @@ module.exports = {
 				darkModeIcon: '#373C40',
 			},
 			fontFamily: {
-				sans: ['open sans'],
+				body: ['"Open Sans"', 'sans-serif'],
 			},
 		},
 	},

@@ -6,7 +6,7 @@ const projectList = [
 	{
 		id: 1,
 		name: 'Blomsterwerket',
-		info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore debitis perspiciatis saepe vero quibusdam sit dolorum, assumenda recusandae sed.',
+		info: 'Self developed project targeted towards a small flower shop from a little place called Råde. First project using React in combination with Material UI. Commerce.js used as a eCommerce SDK.',
 		technologies: [
 			'HTML',
 			'CSS',
@@ -23,7 +23,7 @@ const projectList = [
 	{
 		id: 2,
 		name: 'Community Science Museum',
-		info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore debitis perspiciatis saepe vero quibusdam sit dolorum, assumenda recusandae sed.',
+		info: 'School project with a goal to develop and design a website for a fictional Community Sience Musem. The project was to test our abilites in the subjects we had in our first semester at Noroff Frontend-Development studies.',
 		technologies: ['HTML', 'CSS', 'Adobe XD'],
 		img: csm,
 		color: '#295e73',
@@ -33,7 +33,7 @@ const projectList = [
 	{
 		id: 3,
 		name: 'Rainy Days',
-		info: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore labore debitis perspiciatis saepe vero quibusdam sit dolorum, assumenda recusandae sed.',
+		info: '',
 		technologies: ['HTML', 'CSS', 'Adobe XD'],
 		img: bw,
 		color: '#734701',
