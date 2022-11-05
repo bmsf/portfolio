@@ -9,12 +9,22 @@ const Technologies = () => {
 			className='flex flex-col items-center w-10/12 mb-24'
 			id='technologies'
 		>
-			<h2 class='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'>
+			<h2
+				data-aos='fade-up'
+				data-aos-duration='1000'
+				data-aos-delay='500'
+				class='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
+			>
 				Technologies
 			</h2>
 			<div className='line'></div>
 			<div className='grid grid-cols-3 gap-12 mt-16 md:grid-cols-4 sm:gap-40'>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='500'
+					className='flex flex-col items-center'
+				>
 					<AiFillHtml5
 						size='5rem'
 						color='#E44D27'
@@ -22,7 +32,12 @@ const Technologies = () => {
 					/>
 					<p>HTML5</p>
 				</div>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='700'
+					className='flex flex-col items-center'
+				>
 					<DiCss3
 						size='5rem'
 						color='#1471B6'
@@ -30,7 +45,12 @@ const Technologies = () => {
 					/>
 					<p>CSS3</p>
 				</div>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='900'
+					className='flex flex-col items-center'
+				>
 					<SiJavascript
 						size='5rem'
 						color='#F7DF1C'
@@ -38,7 +58,12 @@ const Technologies = () => {
 					/>
 					<p>JavaScript</p>
 				</div>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='1100'
+					className='flex flex-col items-center'
+				>
 					<DiReact
 						size='5rem'
 						color='#6FCFEF'
@@ -46,7 +71,12 @@ const Technologies = () => {
 					/>
 					<p>React</p>
 				</div>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='500'
+					className='flex flex-col items-center'
+				>
 					<SiAdobexd
 						size='5rem'
 						color='#440235'
@@ -54,7 +84,12 @@ const Technologies = () => {
 					/>
 					<p>Adobe XD</p>
 				</div>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='700'
+					className='flex flex-col items-center'
+				>
 					<SiTailwindcss
 						size='5rem'
 						color='#37BCF8'
@@ -62,7 +97,12 @@ const Technologies = () => {
 					/>
 					<p>Tailwind</p>
 				</div>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='900'
+					className='flex flex-col items-center'
+				>
 					<DiGit
 						size='5rem'
 						color='#F34E29'
@@ -70,7 +110,12 @@ const Technologies = () => {
 					/>
 					<p>Git</p>
 				</div>
-				<div className='flex flex-col items-center'>
+				<div
+					data-aos='fade-up'
+					data-aos-duration='1000'
+					data-aos-delay='1100'
+					className='flex flex-col items-center'
+				>
 					<AiFillApi
 						size='5rem'
 						className='hover:text-secondary  transform transition duration-500 hover:scale-125'

@@ -16,7 +16,12 @@ const Projects = () => {
 			className='flex flex-col items-center justify-between mb-10'
 			id='projects'
 		>
-			<h2 class='m-24 text-4xl font-extrabold text-center text-gray-900 dark:text-white'>
+			<h2
+				data-aos='fade-up'
+				data-aos-duration='1000'
+				// data-aos-delay='200'
+				class='m-24 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
+			>
 				Projects
 			</h2>
 
@@ -32,16 +37,31 @@ const Projects = () => {
 							<div>
 								<div class='p-10'>
 									<div className='flex flex-col align-center justify-center'>
-										<h3 className='text-3xl font-bold text-center lg:text-left'>
+										<h3
+											className='text-3xl font-bold text-center lg:text-left'
+											data-aos='fade-up'
+											data-aos-duration='1000'
+											data-aos-delay='500'
+										>
 											{project.name}
 										</h3>
-										<p className='my-10 leading-loose'>{project.info}</p>
+										<p
+											data-aos='fade-up'
+											data-aos-duration='1000'
+											data-aos-delay='800'
+											className='my-10 leading-loose'
+										>
+											{project.info}
+										</p>
 									</div>
 
 									<div className='flex flex-wrap uppercase'>
 										{project.technologies.map((tech) => {
 											return (
 												<div
+													data-aos='fade-right'
+													data-aos-duration='1000'
+													data-aos-delay='500'
 													key={project.tech}
 													className='tech p-3 my-2 mr-3'
 													// id='bg-tech'
@@ -55,6 +75,9 @@ const Projects = () => {
 								</div>
 							</div>
 							<Image
+								data-aos='fade-right'
+								data-aos-duration='1000'
+								data-aos-delay='500'
 								alt={`Image of project`}
 								src={project.img}
 								className='w-6/6 sm:w-4/6 lg:w-3/6'
