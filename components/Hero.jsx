@@ -140,7 +140,7 @@ const Hero = () => {
 									<div className='flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600 self-end'>
 										<button
 											onClick={() => setShowModal(false)}
-											class='bg-button text-primary w-48 transition-all relative inline-flex items-center justify-center  overflow-hidden tracking-tighter dark:text-primary dark:bg-darkModeBg py-4 px-6 rounded-full text-center cursor-pointer group transform'
+											class='bg-primary text-darkModeBg w-48 transition-all relative inline-flex items-center justify-center  overflow-hidden tracking-tighter dark:text-primary dark:bg-darkModeBg py-4 px-6 rounded-full text-center cursor-pointer group transform'
 										>
 											<span class='absolute w-0 h-0 transition-all duration-500 ease-out dark:bg-darkButtonHover bg-darkButtonHover  rounded-full group-hover:w-56 group-hover:h-56'></span>
 											<span class='absolute  inset-0 w-full h-full mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent '></span>

@@ -13,7 +13,7 @@ const Home = () => {
 		document.title = 'Portfolio - Bjørn-Magnus Svendsen Fromreide';
 	}, []);
 
-	const [darkMode, setDarkMode] = useState(true);
+	const [darkMode, setDarkMode] = useState(false);
 
 	return (
 		<div className={darkMode ? 'dark' : ''}>

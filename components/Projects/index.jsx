@@ -19,7 +19,7 @@ const Projects = () => {
 			<h2
 				data-aos='fade-up'
 				data-aos-duration='1000'
-				// data-aos-delay='200'
+				
 				class='m-24 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
 			>
 				Projects
