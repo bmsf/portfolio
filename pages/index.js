@@ -25,6 +25,9 @@ const Home = () => {
 						<BackgroundAnimation />
 					</div>
 					<a
+						data-aos='fade-down'
+						data-aos-duration='1000'
+						data-aos-delay='1000'
 						href='#projects'
 						className='relative hover:text- dark:hover:text-darkButtonHover bottom-10'
 					>
