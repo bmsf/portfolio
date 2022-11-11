@@ -1,10 +1,12 @@
 import { React, useState } from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { MdDarkMode, MdLightMode } from 'react-icons/md';
 import { DiCode } from 'react-icons/di';
 import { useEffect } from 'react';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+
+import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = ({ setDarkMode, darkMode }) => {
 	useEffect(() => {
@@ -58,11 +60,54 @@ const Header = ({ setDarkMode, darkMode }) => {
 				data-aos-duration='1000'
 				data-aos-delay='3000'
 			>
-				<BsFillMoonStarsFill
-					className=' mr-3 dark:hover:text-darkButtonHover cursor-pointer transform transition duration-500 hover:scale-125'
-					size='2rem'
+				<div
+					className='flex w-20 bg-darkModeBg dark:bg-primary py-1 px-2 rounded-full mr-3 cursor-pointer'
+					style={{ justifyContent: darkMode ? 'flex-end' : 'flex-start' }}
 					onClick={() => setDarkMode(!darkMode)}
-				/>
+				>
+					<motion.div
+						transition={{ layout: { duration: 0.2 } }}
+						layout
+						className='bg-primary dark:bg-darkModeBg rounded-full p-1'
+					>
+						<AnimatePresence exitBeforeEnter initial={false}>
+							{darkMode ? (
+								<motion.div
+									initial={{ y: -30, opacity: 0 }}
+									animate={{ y: 0, opacity: 1 }}
+									exit={{ y: 30, opacity: 0 }}
+									transition={{ duration: 0.2 }}
+									key='moon'
+								>
+									<MdDarkMode
+										className='cursor-pointer transform transition duration-500'
+										size='1rem'
+										onClick={() => setDarkMode(!darkMode)}
+									/>
+								</motion.div>
+							) : (
+								<motion.div
+									initial={{ y: -30, opacity: 0 }}
+									animate={{ y: 0, opacity: 1 }}
+									exit={{ y: 30, opacity: 0 }}
+									transition={{ duration: 0.2 }}
+									key='sun'
+								>
+									<MdLightMode
+										size='1rem'
+										onClick={() => setDarkMode(!darkMode)}
+										className=' text-darkModeBg cursor-pointer transform transition duration-500'
+										initial={{ y: -30, opacity: 0 }}
+										animate={{ y: 0, opacity: 1 }}
+										exit={{ y: 30, opacity: 0 }}
+										transition={{ duration: 0.2 }}
+									/>
+								</motion.div>
+							)}
+						</AnimatePresence>
+					</motion.div>
+				</div>
+
 				<a href='https://github.com/bmsf' target='_blank' rel='noreferrer'>
 					<AiFillGithub
 						className='mr-3 dark:hover:text-darkButtonHover cursor-pointer transform transition duration-500 hover:scale-125'

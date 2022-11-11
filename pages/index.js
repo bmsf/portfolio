@@ -22,7 +22,7 @@ const Home = () => {
 					<Header setDarkMode={setDarkMode} darkMode={darkMode} />
 					<div className='mb-24 w-2/3'>
 						<Hero />
-						<BackgroundAnimation />
+						<BackgroundAnimation darkMode={darkMode} />
 					</div>
 					<a
 						data-aos='fade-down'
@@ -36,7 +36,7 @@ const Home = () => {
 				</section>
 				<Projects />
 				<Technologies />
-				<Contact />
+				<Contact darkMode={darkMode} />
 				<Footer />
 			</main>
 		</div>

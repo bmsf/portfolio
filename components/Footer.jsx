@@ -3,7 +3,7 @@ import { DiCode } from 'react-icons/di';
 
 const Footer = () => {
 	return (
-		<footer class='p-4 bg-white rounded-lg md:px-6 md:py-8 dark:bg-darkModeBg w-10/12'>
+		<footer class='p-4 rounded-lg md:px-6 md:py-8 dark:bg-darkModeBg w-10/12'>
 			<div class='sm:flex sm:items-center sm:justify-between '>
 				<a href='./' className='flex mb-3 sm:mb-0'>
 					<DiCode size='2rem' />

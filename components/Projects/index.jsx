@@ -1,16 +1,16 @@
-import { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
 import projectList from './data';
+
+import {
+	useAnimation,
+	motion as m,
+	useMotionValue,
+	useTransform,
+} from 'framer-motion';
 
 import Image from 'next/image';
 
 const Projects = () => {
-	const [isOpen, setIsOpen] = useState(false);
-
-	const handleClick = () => {
-		setIsOpen(!isOpen);
-	};
-
 	return (
 		<section
 			className='flex flex-col items-center justify-between mb-10'
@@ -19,23 +19,26 @@ const Projects = () => {
 			<h2
 				data-aos='fade-up'
 				data-aos-duration='1000'
-				
-				class='m-24 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
+				className='m-24 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
 			>
 				Projects
 			</h2>
 
 			<div className='flex flex-col items-center'>
 				{projectList.map((project) => {
+					const [isOpen, setIsOpen] = useState(false);
 					return (
-						<a
+						<m.a
 							key={project.id}
-							className='flex flex-col text-primary w-10/12 mb-10 items-center cursor-pointer lg:flex-row'
-							style={{ backgroundColor: project.color, color: project.font }}
+							className=' flex flex-col text-primary w-10/12  mb-10 items-center cursor-pointer lg:flex-row'
+							style={{
+								backgroundColor: project.color,
+								color: project.font,
+							}}
 							onClick={() => window.open(`${project.link}`, '_blank')}
 						>
 							<div>
-								<div class='p-10'>
+								<div className='p-20'>
 									<div className='flex flex-col align-center justify-center'>
 										<h3
 											className='text-3xl font-bold text-center lg:text-left'
@@ -64,7 +67,6 @@ const Projects = () => {
 													data-aos-delay='500'
 													key={project.tech}
 													className='tech p-3 my-2 mr-3'
-													// id='bg-tech'
 													style={{ backgroundColor: project.bgTech }}
 												>
 													{tech}
@@ -82,7 +84,7 @@ const Projects = () => {
 								src={project.img}
 								className='w-6/6 sm:w-4/6 lg:w-3/6'
 							/>
-						</a>
+						</m.a>
 					);
 				})}
 			</div>

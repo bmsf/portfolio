@@ -44,8 +44,6 @@ const Hero = () => {
 				{showModal ? (
 					<>
 						<m.div
-							// data-aos='fade-down'
-							// data-aos-duration='1000'
 							initial={{ y: '100%' }}
 							animate={{ y: '0%' }}
 							transition={{ duration: 0.75, ease: 'easeOut' }}
