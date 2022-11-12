@@ -61,7 +61,7 @@ const Header = ({ setDarkMode, darkMode }) => {
 				data-aos-delay='3000'
 			>
 				<div
-					className='flex w-20 bg-darkModeBg dark:bg-primary py-1 px-2 rounded-full mr-3 cursor-pointer'
+					className='flex w-16 bg-darkModeBg dark:bg-primary py-1 px-2 rounded-full mr-3 cursor-pointer'
 					style={{ justifyContent: darkMode ? 'flex-end' : 'flex-start' }}
 					onClick={() => setDarkMode(!darkMode)}
 				>
