@@ -32,11 +32,11 @@ const Hero = () => {
 				data-aos='fade-down'
 				data-aos-duration='1000'
 				data-aos-delay='2000'
-				class='bg-button text-primary w-48 transition-all relative inline-flex items-center justify-center  overflow-hidden tracking-tighter dark:text-secondary dark:bg-primary py-4 px-6 rounded-full text-center cursor-pointer group transform'
+				className='bg-button text-primary w-48 transition-all relative inline-flex items-center justify-center  overflow-hidden tracking-tighter dark:text-secondary dark:bg-primary py-4 px-6 rounded-full text-center cursor-pointer group transform'
 			>
-				<span class='absolute w-0 h-0 transition-all duration-500 ease-out dark:bg-darkButtonHover bg-darkButtonHover  rounded-full group-hover:w-56 group-hover:h-56'></span>
-				<span class='absolute  inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent '></span>
-				<span class='relative w-full  transition-colors duration-200 ease-in-out group-hover:text-white'>
+				<span className='absolute w-0 h-0 transition-all duration-500 ease-out dark:bg-darkButtonHover bg-darkButtonHover  rounded-full group-hover:w-56 group-hover:h-56'></span>
+				<span className='absolute  inset-0 w-full h-full -mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent '></span>
+				<span className='relative w-full  transition-colors duration-200 ease-in-out group-hover:text-white'>
 					Resume
 				</span>
 			</button>
@@ -59,12 +59,12 @@ const Hero = () => {
 										<button
 											onClick={() => setShowModal(false)}
 											type='button'
-											class='text-gray-400 bg-transparent hover:bg-gray-100 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
+											className='text-gray-400 bg-transparent hover:bg-gray-100 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white'
 											data-modal-toggle='defaultModal'
 										>
 											<svg
 												aria-hidden='true'
-												class='w-5 h-5'
+												className='w-5 h-5'
 												fill='currentColor'
 												viewBox='0 0 20 20'
 												xmlns='http://www.w3.org/2000/svg'
@@ -75,7 +75,7 @@ const Hero = () => {
 													clip-rule='evenodd'
 												></path>
 											</svg>
-											<span class='sr-only'>Close modal</span>
+											<span className='sr-only'>Close modal</span>
 										</button>
 									</div>
 
@@ -138,11 +138,11 @@ const Hero = () => {
 									<div className='flex items-center p-6 space-x-2 rounded-b border-t border-gray-200 dark:border-gray-600 self-end'>
 										<button
 											onClick={() => setShowModal(false)}
-											class='bg-primary text-darkModeBg w-48 transition-all relative inline-flex items-center justify-center  overflow-hidden tracking-tighter dark:text-primary dark:bg-darkModeBg py-4 px-6 rounded-full text-center cursor-pointer group transform'
+											className='bg-primary text-darkModeBg w-48 transition-all relative inline-flex items-center justify-center  overflow-hidden tracking-tighter dark:text-primary dark:bg-darkModeBg py-4 px-6 rounded-full text-center cursor-pointer group transform'
 										>
-											<span class='absolute w-0 h-0 transition-all duration-500 ease-out dark:bg-darkButtonHover bg-darkButtonHover  rounded-full group-hover:w-56 group-hover:h-56'></span>
-											<span class='absolute  inset-0 w-full h-full mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent '></span>
-											<span class='relative w-full  transition-colors duration-200 ease-in-out group-hover:text-white'>
+											<span className='absolute w-0 h-0 transition-all duration-500 ease-out dark:bg-darkButtonHover bg-darkButtonHover  rounded-full group-hover:w-56 group-hover:h-56'></span>
+											<span className='absolute  inset-0 w-full h-full mt-1 rounded-lg opacity-30 bg-gradient-to-b from-transparent via-transparent '></span>
+											<span className='relative w-full  transition-colors duration-200 ease-in-out group-hover:text-white'>
 												Close
 											</span>
 										</button>

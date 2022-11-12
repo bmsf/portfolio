@@ -13,7 +13,7 @@ const Technologies = () => {
 				data-aos='fade-up'
 				data-aos-duration='1000'
 				data-aos-delay='500'
-				class='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
+				className='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
 			>
 				Technologies
 			</h2>

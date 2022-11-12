@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import projectList from './data';
 
 import {
@@ -26,7 +26,6 @@ const Projects = () => {
 
 			<div className='flex flex-col items-center'>
 				{projectList.map((project) => {
-					const [isOpen, setIsOpen] = useState(false);
 					return (
 						<m.a
 							key={project.id}

@@ -2,13 +2,13 @@ import React from 'react';
 
 const Contact = ({ darkMode }) => {
 	return (
-		<section class='bg-primary dark:bg-darkModeBg' id='contact'>
-			<div class='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
+		<section className='bg-primary dark:bg-darkModeBg' id='contact'>
+			<div className='py-8 lg:py-16 px-4 mx-auto max-w-screen-md'>
 				<h2
 					data-aos='fade-up'
 					data-aos-duration='1000'
 					data-aos-delay='500'
-					class='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
+					className='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
 				>
 					Get in touch
 				</h2>
@@ -16,7 +16,7 @@ const Contact = ({ darkMode }) => {
 					data-aos='fade-up'
 					data-aos-duration='1000'
 					data-aos-delay='700'
-					class='mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl'
+					className='mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl'
 				>
 					Send me an email if you want to connect
 				</p>
