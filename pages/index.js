@@ -8,6 +8,8 @@ import Hero from '../components/Hero';
 import Technologies from '../components/Technologies';
 import Projects from '../components/Projects/index';
 
+import { motion } from 'framer-motion';
+
 const Home = () => {
 	useEffect(() => {
 		document.title = 'Portfolio - Bjørn-Magnus Svendsen Fromreide';
@@ -24,15 +26,15 @@ const Home = () => {
 						<Hero />
 						<BackgroundAnimation darkMode={darkMode} />
 					</div>
-					<a
-						data-aos='fade-down'
-						data-aos-duration='1000'
-						data-aos-delay='1000'
+					<motion.a
+						initial={{ y: 100 }}
+						animate={{ y: 0 }}
+						transition={{ ease: 'easeOut', duration: 1 }}
 						href='#projects'
 						className='relative hover:text- dark:hover:text-darkButtonHover bottom-10'
 					>
 						Scroll
-					</a>
+					</motion.a>
 				</section>
 				<Projects />
 				<Technologies />

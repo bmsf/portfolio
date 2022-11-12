@@ -7,7 +7,7 @@ const BackgroundAnimation = ({ darkMode }) => (
 		initial={{ y: -20 }}
 		animate={{ y: 20 }}
 		transition={{ ease: 'easeOut', duration: 2 }}
-		className='w-5/12  md:w-5/12 lg:w-4/12 absolute right-8 md:right-12 lg:right-28 top-28 md:top-32 flex justify-center items-center text-secondary'
+		className='w-5/12  md:w-5/12 lg:w-4/12 absolute right-4 md:right-12 lg:right-28 top-20 md:top-32 flex justify-center items-center text-secondary'
 	>
 		{/* SVG background  */}
 		{darkMode ? (
