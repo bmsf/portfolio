@@ -13,7 +13,7 @@ const Technologies = () => {
 				data-aos='fade-up'
 				data-aos-duration='1000'
 				data-aos-delay='500'
-				className='mb-4 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
+				className='mb-4 text-4xl font-extrabold text-center text-darkModeBg dark:text-white'
 			>
 				Technologies
 			</h2>
@@ -28,7 +28,7 @@ const Technologies = () => {
 					<AiFillHtml5
 						size='5rem'
 						color='#E44D27'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2 transform transition duration-500 hover:scale-125'
 					/>
 					<p>HTML5</p>
 				</div>
@@ -41,7 +41,7 @@ const Technologies = () => {
 					<DiCss3
 						size='5rem'
 						color='#1471B6'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2 transform transition duration-500 hover:scale-125'
 					/>
 					<p>CSS3</p>
 				</div>
@@ -54,7 +54,7 @@ const Technologies = () => {
 					<SiJavascript
 						size='5rem'
 						color='#F7DF1C'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2 transform transition duration-500 hover:scale-125'
 					/>
 					<p>JavaScript</p>
 				</div>
@@ -67,7 +67,7 @@ const Technologies = () => {
 					<DiReact
 						size='5rem'
 						color='#6FCFEF'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2 transform transition duration-500 hover:scale-125'
 					/>
 					<p>React</p>
 				</div>
@@ -80,7 +80,7 @@ const Technologies = () => {
 					<SiAdobexd
 						size='5rem'
 						color='#440235'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2 transform transition duration-500 hover:scale-125'
 					/>
 					<p>Adobe XD</p>
 				</div>
@@ -93,7 +93,7 @@ const Technologies = () => {
 					<SiTailwindcss
 						size='5rem'
 						color='#37BCF8'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2 transform transition duration-500 hover:scale-125'
 					/>
 					<p>Tailwind</p>
 				</div>
@@ -106,7 +106,7 @@ const Technologies = () => {
 					<DiGit
 						size='5rem'
 						color='#F34E29'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2  transform transition duration-500 hover:scale-125'
 					/>
 					<p>Git</p>
 				</div>
@@ -118,7 +118,7 @@ const Technologies = () => {
 				>
 					<AiFillApi
 						size='5rem'
-						className='hover:text-secondary  transform transition duration-500 hover:scale-125'
+						className='hover:text-secondary mb-2 transform transition duration-500 hover:scale-125'
 					/>
 					<p>Commerce.js</p>
 				</div>

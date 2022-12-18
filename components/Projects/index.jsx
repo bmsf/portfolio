@@ -19,7 +19,7 @@ const Projects = () => {
 			<h2
 				data-aos='fade-up'
 				data-aos-duration='1000'
-				className='m-24 text-4xl font-extrabold text-center text-gray-900 dark:text-white'
+				className='m-24 text-4xl font-extrabold text-center dark:bg-darkModeBg dark:text-white'
 			>
 				Projects
 			</h2>
@@ -37,7 +37,7 @@ const Projects = () => {
 							onClick={() => window.open(`${project.link}`, '_blank')}
 						>
 							<div>
-								<div className='p-20'>
+								<div className='p-12'>
 									<div className='flex flex-col align-center justify-center'>
 										<h3
 											className='text-3xl font-bold text-center lg:text-left'

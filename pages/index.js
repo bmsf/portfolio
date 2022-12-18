@@ -32,9 +32,7 @@ const Home = () => {
 						transition={{ ease: 'easeOut', duration: 1 }}
 						href='#projects'
 						className='relative hover:text- dark:hover:text-darkButtonHover bottom-10'
-					>
-						Scroll
-					</motion.a>
+					></motion.a>
 				</section>
 				<Projects />
 				<Technologies />

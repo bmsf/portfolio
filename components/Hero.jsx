@@ -10,7 +10,7 @@ const Hero = () => {
 	return (
 		<div className='flex flex-col relative left-0'>
 			<h1
-				className='text-3xl md:text-4xl z-10 '
+				className='text-3xl md:text-4xl z-10'
 				data-aos='fade-down'
 				data-aos-duration='1000'
 				data-aos-delay='1000'
@@ -44,10 +44,11 @@ const Hero = () => {
 				{showModal ? (
 					<>
 						<m.div
-							initial={{ y: '100%' }}
+							key='modal'
+							initial={{ y: '150%' }}
 							animate={{ y: '0%' }}
-							transition={{ duration: 0.75, ease: 'easeOut' }}
-							exit={{ y: '100%' }}
+							transition={{ duration: 0.75 }}
+							exit={{ y: '150%' }}
 							className='overflow-y-auto backdrop-blur-sm overflow-x-hidden fixed top-0 right-0 left-0 z-50 w-full md:inset-0 h-modal md:h-full mx-auto'
 						>
 							<div className='relative p-4 w-full max-w-3xl h-full md:h-auto mx-auto'>
