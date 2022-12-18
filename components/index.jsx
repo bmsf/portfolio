@@ -1,3 +1,6 @@
 export * from './Header';
-// export * from './Hero.jsx';
-
+export * from './Background';
+export * from './Contact';
+export * from './Footer';
+export * from './Hero';
+export * from './Technologies';

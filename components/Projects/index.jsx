@@ -1,16 +1,11 @@
 import React from 'react';
 import projectList from './data';
 
-import {
-	useAnimation,
-	motion as m,
-	useMotionValue,
-	useTransform,
-} from 'framer-motion';
+import { motion as m } from 'framer-motion';
 
 import Image from 'next/image';
 
-const Projects = () => {
+const Projects = () => {	
 	return (
 		<section
 			className='flex flex-col items-center justify-between mb-10'

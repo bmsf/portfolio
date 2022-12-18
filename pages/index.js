@@ -1,13 +1,5 @@
 import React, { useEffect, useState } from 'react';
-
-import Header from '../components/Header';
-import Contact from '../components/Contact';
-import BackgroundAnimation from '../components/Background';
-import Footer from '../components/Footer';
-import Hero from '../components/Hero';
-import Technologies from '../components/Technologies';
-import Projects from '../components/Projects/index';
-
+import * as components from '../components/index';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -21,10 +13,10 @@ const Home = () => {
 		<div className={darkMode ? 'dark' : ''}>
 			<main className='flex flex-col items-center bg-primary text-secondary dark:bg-darkModeBg dark:text-primary overflow-x-hidden'>
 				<section className='flex flex-col h-screen items-center justify-between gap-5'>
-					<Header setDarkMode={setDarkMode} darkMode={darkMode} />
+					<components.Header setDarkMode={setDarkMode} darkMode={darkMode} />
 					<div className='mb-24 w-2/3'>
-						<Hero />
-						<BackgroundAnimation darkMode={darkMode} />
+						<components.Hero />
+						<components.BackgroundAnimation darkMode={darkMode} />
 					</div>
 					<motion.a
 						initial={{ y: 100 }}
@@ -34,10 +26,10 @@ const Home = () => {
 						className='relative hover:text- dark:hover:text-darkButtonHover bottom-10'
 					></motion.a>
 				</section>
-				<Projects />
-				<Technologies />
-				<Contact darkMode={darkMode} />
-				<Footer />
+				<components.Projects />
+				<components.Technologies />
+				<components.Contact darkMode={darkMode} />
+				<components.Footer />
 			</main>
 		</div>
 	);
